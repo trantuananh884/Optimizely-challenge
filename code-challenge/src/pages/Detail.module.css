@@ -1,0 +1,128 @@
+.page {
+  width: min(100% - 32px, 800px);
+  margin: 0 auto;
+  padding: 40px 0;
+  text-align: left;
+}
+
+.card {
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: linear-gradient(145deg, rgb(32 45 66 / 96%), rgb(25 36 55 / 96%));
+  box-shadow: var(--shadow);
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.name {
+  margin: 0;
+  color: var(--accent);
+  font-size: clamp(26px, 5vw, 36px);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  overflow-wrap: anywhere;
+}
+
+.description {
+  margin: 12px 0 0;
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.metadata {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 48px;
+  margin: 28px 0;
+  padding: 20px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.metadataItem {
+  display: grid;
+  gap: 6px;
+}
+
+.metadataItem dt {
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.metadataItem dd {
+  margin: 0;
+  color: var(--text-h);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.star {
+  color: var(--gold);
+}
+
+.githubLink {
+  display: inline-flex;
+  min-height: 38px;
+  align-items: center;
+  gap: 10px;
+  padding: 0 14px;
+  border: 1px solid var(--success);
+  border-radius: 8px;
+  background: var(--success);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 120ms ease;
+}
+
+.githubLink:hover {
+  border-color: var(--success-hover);
+  background: var(--success-hover);
+}
+
+.githubLink:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.state {
+  width: min(100% - 32px, 800px);
+  margin: 0 auto;
+  padding: 48px 0;
+  color: var(--text);
+  font-size: 15px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .page {
+    width: min(100% - 24px, 800px);
+    padding: 24px 0;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .metadata {
+    gap: 18px 28px;
+    margin: 22px 0;
+    padding: 16px 0;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+}
