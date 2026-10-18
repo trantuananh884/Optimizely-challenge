@@ -1,0 +1,101 @@
+:root {
+  --text: #a7b3c8;
+  --text-h: #f1f5fc;
+  --bg: #111827;
+  --surface: #192437;
+  --surface-raised: #202d42;
+  --surface-hover: #293952;
+  --border: #34445d;
+  --accent: #a995ff;
+  --accent-bg: rgb(169 149 255 / 13%);
+  --accent-border: rgb(169 149 255 / 55%);
+  --success: #32b879;
+  --success-hover: #27a56a;
+  --danger: #ff858b;
+  --danger-bg: #38232e;
+  --danger-border: #70404c;
+  --gold: #f2c66d;
+  --shadow:
+    rgb(0 0 0 / 28%) 0 14px 34px -8px, rgb(0 0 0 / 18%) 0 5px 12px -3px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(ellipse at 50% -18%, rgb(72 86 140 / 26%), transparent 52%),
+    var(--bg);
+}
+
+#root {
+  width: 1126px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-inline: 1px solid rgb(52 68 93 / 55%);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+p {
+  margin: 0;
+}
+
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--surface-raised);
+}
